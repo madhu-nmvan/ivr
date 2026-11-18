@@ -1,0 +1,21 @@
+{
+  "name": "ivr",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sandcastle": "tsx .sandcastle/main.ts",
+    "typecheck": "tsc --noEmit -p .sandcastle/agent-workflows && tsc --noEmit",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@ai-hero/sandcastle": "^0.14.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.20.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}
