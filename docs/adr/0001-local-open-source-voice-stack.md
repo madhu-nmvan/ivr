@@ -1,0 +1,3 @@
+# Local open-source voice stack, softphone only
+
+The draft must cost $0, so the IVR runs entirely on a developer Mac: Asterisk (PBX), Vosk/faster-whisper (speech-to-text), Piper (text-to-speech), and a local LLM via Ollama for Intent recognition, with Postgres in Docker. Callers reach it from a SIP softphone dialling the fictional number 416-555-0100 — there is no real phone number. Hosted voice-AI platforms (e.g. Telnyx Voice AI ~$0.05/min) and Rasa (not open source; paid beyond 1,000 conversations/month) were rejected. Going live means adding a SIP trunk/DID (Telnyx/SignalWire/Plivo, ~$0.50–1/mo per number plus per-minute) without changing the IVR itself.
